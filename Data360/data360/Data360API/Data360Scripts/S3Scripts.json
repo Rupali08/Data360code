@@ -1,0 +1,33 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Parameters": {},
+  "Resources": {
+    "MyS3Bucket1": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "BucketName": "samplebucket1",
+        "AccessControl": "Private"
+      }
+    },
+    "MyLambdaFunction1": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "FunctionName": "func1",
+        "Runtime": "python3.8",
+        "Handler": "index1.handler",
+        "Role": "arn:aws:iam::296801329302:role/service-role/AmazonSageMakerServiceCatalogProductsLambdaRole",
+        "Code": {
+          "S3Bucket": "medeanalytics",
+          "S3Key": "codepathlambda.zip"
+        }
+      }
+    },
+    "MyS3Bucket2": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "BucketName": "bucket2",
+        "AccessControl": "Private"
+      }
+    }
+  }
+}

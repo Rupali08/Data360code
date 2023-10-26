@@ -1,0 +1,22 @@
+{
+  "Parameters": {
+    "BucketName": {
+      "Type": "String",
+      "Description": "Name of the S3 bucket"
+    },
+    "BucketRegion": {
+      "Type": "String",
+      "Description": "Region where the S3 bucket will be created"
+    }
+  },
+  "Resources": {
+    "MyS3Bucket": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "BucketName": { "Ref": "BucketName" },
+        "AccessControl": "Private"
+      }
+    }
+    
+  }
+}

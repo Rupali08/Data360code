@@ -1,0 +1,48 @@
+{
+  "Parameters": {
+	"FunctionName":{
+		"Type": "String",
+		"Description": "name where the function will be created"
+	},
+	"Runtimeconfig":{
+		"Type": "String",
+		"Description": "Runtime name"
+	},
+	"HandlerName":{
+		"Type": "String",
+		"Description": "Hanfler name"
+	},
+	"IAMRole":{
+		"Type": "String",
+		"Description": "IAM Role"
+	},
+	"S3BucketName":{
+		"Type": "String",
+		"Description": "S3 Bucket name"
+	},
+	"S3Keyname":{
+		"Type": "String",
+		"Description": "Path where the script is located"
+	}
+  },
+  "Resources": {
+	"MyLambdaFunction":{
+		"Type":"AWS::Lambda::Function",
+		"Properties":{
+			"Runtime":{ "Ref": "Runtimeconfig" },
+			"FunctionName":{ "Ref": "FunctionName" },
+			"Handler": { "Ref": "HandlerName" },
+			"Role":{ "Ref": "IAMRole" },
+			"Code": {
+			  "S3Bucket": { "Ref": "S3BucketName" },
+			  "S3Key": { "Ref": "S3Keyname" }
+			},
+			"Timeout": 25,
+			"TracingConfig": {
+				"Mode": "Active"
+			}
+		}	
+	}
+  }
+}
+

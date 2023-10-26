@@ -1,0 +1,18 @@
+#diagram {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  }
+  
+#diagram-content {
+    height: 100%;
+  }
+.react_fast_diagram_MiniControl_Default
+{
+    top: 10px!important;
+    left:0px!important;
+    bottom:0px!important;
+    right:10px!important;
+    flex-direction: row;
+    justify-content: flex-end;
+}
