@@ -1,0 +1,30 @@
+.selected-azure-node{
+    border: 1.5px dashed #04b7ea !important;
+    border-radius: 8px;
+    padding: 3px;
+}
+.azure-design {
+    color: #04b7ea;
+    background-color: #edffff;
+    padding: 10px 10px;
+    border-color: #04beea;
+    flex-direction: row!important;
+    border-radius: 8px;
+    font-size: 12.5px;
+    line-height: 14px !important;
+}
+.selected-aws-node{
+    border: 1.5px dashed #ea8e04 !important;
+    border-radius: 8px;
+    padding: 3px;
+}
+.aws-design {
+    color: #ea8e04;
+    background-color: #fff3ed;
+    padding: 10px 10px;
+    border-color: #ea8e04;
+    flex-direction: row!important;
+    border-radius: 8px;
+    font-size: 12.5px;
+    line-height: 14px !important;
+}

@@ -1,0 +1,44 @@
+.rightbar-details
+{
+    padding: 8px;
+    height: 100%;
+}
+.rightbar-heading
+{
+    height: 6%;
+    font-weight: 500;
+    display: flex;
+    font-size: 14px;
+    color: #6085a5;
+    padding: 3px;
+}
+.rightbar-heading span:nth-child(1)
+{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.rightbar-heading span:nth-child(2)
+{
+    font-size: 11px;
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.rightbar-details div:nth-child(2) label
+{
+    display: flex;
+    font-size: 13px;
+    color: #7da0bf;
+    padding: 7px 0px;
+}
+.rightbar-form-container div
+{
+    padding-bottom: 15px;
+}
+.form-select
+{
+    color: #7c9fc2;
+}

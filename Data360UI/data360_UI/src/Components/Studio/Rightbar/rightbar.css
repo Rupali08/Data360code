@@ -1,0 +1,25 @@
+
+.rightbar-container
+{
+  width: 20%;
+  background: #edf2f769!important;
+  height: 100%;
+  border-left: 3px solid #eaf2f9;
+}
+.component-details-static
+{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.react_fast_diagram_MiniControl_Btn
+{
+    padding: 5px!important;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
