@@ -3,7 +3,14 @@
     "",
     "\\Data360",
     "\\Data360UI",
+    "\\Data360UI\\data360_UI",
+    "\\Data360UI\\data360_UI\\public",
+    "\\Data360UI\\data360_UI\\src",
+    "\\Data360UI\\data360_UI\\src\\Components",
+    "\\Data360UI\\data360_UI\\src\\Components\\Studio",
+    "\\Data360UI\\data360_UI\\src\\Components\\Studio\\Forms",
     "\\Data360\\data360"
   ],
+  "SelectedNode": "\\Data360UI",
   "PreviewInSolutionExplorer": false
 }

@@ -45,13 +45,15 @@ export const AwsS3= (props)=>
             <p>AWS S3 Configuration</p>
             <Form>
                 <Form.Control type="text" placeholder="Enter AWS Name" value={bucketName}  autoComplete="off" onChange={(e)=>onChangeValue('bucketName',e.target.value)}></Form.Control>
-                <br></br>
-                <Form.Control type="text" placeholder="Enter Region" value={region} autoComplete="off"  onChange={(e)=>onChangeValue('region',e.target.value)}></Form.Control>
-                <br></br>
-                <Form.Control type="text" placeholder="Enter Access Key" value={accessKey} autoComplete="off" onChange={(e)=>onChangeValue('accessKey',e.target.value)}></Form.Control>
-                <br></br>
-                <Form.Control type="text" placeholder="Enter Secert Access Key" value={secertAccessKey} autoComplete="off" onChange={(e)=>onChangeValue('secertAccessKey',e.target.value)}></Form.Control>
-                </Form>
+                
+                </Form> 
         </div>
     )
 }
+                // code for region, access key and secret 
+                //<br></br>
+                //<Form.Control type="text" placeholder="Enter Region" value={region} autoComplete="off"  onChange={(e)=>onChangeValue('region',e.target.value)}></Form.Control>
+                //  <br></br>
+                //<Form.Control type="text" placeholder="Enter Access Key" value={accessKey} autoComplete="off" onChange={(e)=>onChangeValue('accessKey',e.target.value)}></Form.Control>
+                //<br></br>
+                //<Form.Control type="text" placeholder="Enter Secert Access Key" value={secertAccessKey} autoComplete="off" onChange={(e)=>onChangeValue('secertAccessKey',e.target.value)}></Form.Control>
